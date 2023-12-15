@@ -1,0 +1,9 @@
+set expandtab
+set shiftwidth=4
+set softtabstop=-1
+set tabstop=8
+set textwidth=80
+set nonumber
+set noruler
+syntax enable
+set formatoptions-=t
