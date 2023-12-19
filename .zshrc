@@ -108,3 +108,6 @@ alias notepad="/usr/bin/gnome-text-editor"
 alias ff="/usr/bin/nohup /usr/bin/firefox &; /usr/bin/rm nohup.out"
 alias upev="/usr/bin/sudo /usr/bin/apt update -y && /usr/bin/sudo /usr/bin/apt upgrade -y --auto-remove"
 alias code="codium"
+
+# Fix scrolling issue while moving mouse
+imwheel -b "4 5" > /dev/null 2>&1
