@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 alias term="/usr/bin/gnome-terminal"
 alias notepad="/usr/bin/gnome-text-editor"
 alias ff="/usr/bin/nohup /usr/bin/firefox &; /usr/bin/rm nohup.out"
-alias upev="/usr/bin/sudo /usr/bin/apt update -y && /usr/bin/sudo /usr/bin/apt upgrade -y --auto-remove"
+alias upev="/usr/bin/sudo /usr/bin/apt update -y && /usr/bin/sudo /usr/bin/apt upgrade -y --auto-remove && echo DONE"
 alias code="codium"
 
 # Fix scrolling issue while moving mouse
