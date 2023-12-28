@@ -102,12 +102,15 @@ source $ZSH/oh-my-zsh.sh
 
 # Set CAPS key to ESCAPE
 /usr/bin/setxkbmap -option caps:escape
-# Aliases
+
+# Fix scrolling issue while moving mouse
+imwheel -b "4 5" > /dev/null 2>&1
+
 alias term="/usr/bin/gnome-terminal"
 alias notepad="/usr/bin/gnome-text-editor"
 alias ff="/usr/bin/nohup /usr/bin/firefox &; /usr/bin/rm nohup.out"
 alias upev="/usr/bin/sudo /usr/bin/apt update -y && /usr/bin/sudo /usr/bin/apt upgrade -y --auto-remove && echo DONE"
 alias code="codium"
+# Fix docker hanging issue after VMWare suspend->resume
+alias restart-docker='sudo docker stop $(sudo docker ps -aq) && sudo systemctl restart NetworkManager docker'
 
-# Fix scrolling issue while moving mouse
-imwheel -b "4 5" > /dev/null 2>&1
